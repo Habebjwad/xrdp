@@ -1,0 +1,12 @@
+{
+  "name": "Linux Desktop with RDP",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    // Optional VS Code settings
+  },
+  "forwardPorts": [3389],
+  "postCreateCommand": "sudo service xrdp start",
+  "remoteUser": "codespace"
+}
